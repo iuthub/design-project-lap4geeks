@@ -1,0 +1,31 @@
+.content-inner
+{
+	
+	text-decoration: none;
+	background-color: #fff;
+	margin-bottom: 20px;
+	margin-top: -40px;
+}
+
+.content-inner .card
+{
+	margin-left: 37px; 
+}
+
+.content-inner ul
+{
+	font-family: Helvetica;
+	list-style: none;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: -40px;
+}
+.content-inner h5
+{
+	font-weight: bold;
+	margin-left: 10px;
+}
+.content-inner a
+{
+	margin-left: 10px;
+}

@@ -77,7 +77,6 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-
                                     
                                 </div>
                             </li>
@@ -97,13 +96,13 @@
 
 
 <!doctype html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale')}}">
 <head>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Latest compiled and minified css-->
-
+    <title>{{ config('app.name','Lap4Geeks/Admin') }}</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -164,7 +163,7 @@
                                 <span class="hidden-sm hidden-xs">Product</span></a>
                             <ul class="collapse collapseable" id="collapse-products">
                                 <li><a href="/admin/products/create"><span class="glyphicon glyphicon-plus-sign"></span> Add Product</a></li>
-                                <li><a href="category_list.html"><span class="glyphicon glyphicon-list-alt"></span> Product List</a></li>
+                                <li><a href="/admin/all_products"><span class="glyphicon glyphicon-list-alt"></span> Product List</a></li>
                             </ul>
                         </li>
                         <!--Order List-->
@@ -201,8 +200,47 @@
         </div>
 
         <!--main content-->
-        <div class="col-md-10 display-table-cell col-sm-11 valign-top box">
-            @yield('content');
+        <div class="col-md-10 display-table-cell col-sm-11 valign-top box"> 
+             <div class="row">
+                    <!--Header -->
+                    <header id="nav-header" class="clearfix">
+                        <!--search input-->
+                        <div class="col-md-5">
+                        
+                        <nav class="navbar-default pull-left">
+                             <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu-list">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </nav>
+                            <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Search for something  "></div>
+                        
+                        <!--glyphicons--> 
+                        <div class="col-md-7">
+                            <ul class="pull-right">
+                                <li id="welcome" class="hidden-xs">Welcome to administration area</li>
+                                <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-bell"></span><span class="label label-warning">3</span></a></li>
+                                <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="label label-message">3</span></a></li>   
+                                <li>
+                                     <a href="{{ route('logout') }}"
+                                         onclick="event.preventDefault();
+                                                      document.getElementById('logout-form').submit();">
+                                         {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                    </form>                             
+                                </li>    
+                            </ul>
+                        </div>
+
+                    </header>
+                </div>
+                
+             @yield('content');
+            </div>
 
         </div>
     </div>

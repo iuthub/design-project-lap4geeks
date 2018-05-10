@@ -57,8 +57,8 @@
 						</div>
 						{{Form::submit('Add New Product',['class' => 'btn btn-primary'])}}
 					{!! Form::close() !!}
-					</div>
-					</div>
+						</div>
+						</div>
 					</div>
 				</div>
 		</div>

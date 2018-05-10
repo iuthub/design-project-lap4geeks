@@ -3,7 +3,8 @@
 
 @section('content')
 	
-	<div class="container">
+
+		<div class="col-md-10 display-table-cell col-sm-11 valign-top box">
 		@if(count($products) > 0)
 				@foreach($products as $product)
 
@@ -11,7 +12,7 @@
 					<div class="row">
 						
 						<div class="col-md-4 col-sm-4 ">
-							<a href="/admin/products/{{$product->id}}"><img style="width:100%" src="/storage/product_images/{{$product->products_picture}}"></a>
+							<a href="/admin/products/{{$product->id}}"><img style="width:50%" src="/storage/product_images/{{$product->products_picture}}"></a>
 						</div>
 
 						<div class="col-md-4 col-sm-4 ">

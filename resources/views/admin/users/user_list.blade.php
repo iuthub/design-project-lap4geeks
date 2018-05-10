@@ -1,4 +1,4 @@
-@extends('admin.layouts.app');
+@extends('admin.layouts.app')
 
 @section('content')
 	
@@ -16,9 +16,9 @@
 							<thead>
 								<tr>
 									<th>#Id</th>
-									<th>Name</th>
+									<th>Name</th>	
 									<th>Email</th>
-									<th>Created</th>
+									<th>Created Time</th>
 								</tr>
 							</thead>
 						<tbody>
