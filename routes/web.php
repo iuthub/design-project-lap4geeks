@@ -35,6 +35,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('products','Admin\AdminProductsController');
     Route::get('/all_products','Admin\AdminProductsController@showAll')->name('admin.all_products');
     Route::resource('categories','Admin\AdminCategoryController');
+    Route::get('/user_list','Admin\UserListController@getUsers');
 });
 
 
