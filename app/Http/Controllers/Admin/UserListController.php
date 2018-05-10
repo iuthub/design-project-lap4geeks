@@ -9,7 +9,7 @@ use DB;
 class UserListController extends Controller
 {
     public function getUsers() {
-    	$users = User::orderBy('created_at','desc')->paginate(1);
+    	$users = User::orderBy('created_at','desc')->paginate(10);
     	return view('admin.users.user_list')->with('users',$users);
     }
 }
