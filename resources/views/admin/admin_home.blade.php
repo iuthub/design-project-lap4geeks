@@ -1,4 +1,4 @@
-<!doctype html>
+{{--<!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
     
@@ -30,7 +30,7 @@
             <div class="pull-left img">
                 <div>
                     <h1 class="hidden-sm hidden-xs">
-                        <a href="#"><img src="img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
+                        <a href="#"><img src="css/adminLayout/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
                         </a> Username
                     </h1>
                 </div>
@@ -40,13 +40,13 @@
                     <ul>
                         <!--Dashboard-->
                         <li class="link active">
-                            <a href="index.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true">
+                            <a href="/admin"><span class="glyphicon glyphicon-th-large" aria-hidden="true">
 								</span><span class="hidden-sm hidden-xs"> Dashboard</span></a>
                         </li>
 
                         <!--Users List-->
                         <li>
-                            <a href="dashboard.html"><span class="glyphicon glyphicon-user" aria-hidden="true">
+                            <a href="/admin/user_list"><span class="glyphicon glyphicon-user" aria-hidden="true">
 								</span><span class="hidden-sm hidden-xs"> Users List</span></a>
                         </li>
 
@@ -315,7 +315,9 @@
 <script src="js/func.js"></script>
 </body>
 </html>
-{{-- @extends('admin.layouts.app')
+--}}
+
+@extends('admin.layouts.app')
 
 @section('content')
     <div class="container">
@@ -332,4 +334,4 @@
             </div>
         </div>
     </div>
-@endsection --}}
+@endsection
