@@ -102,7 +102,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Latest compiled and minified css-->
-    <title>{{ config('app.name','Lap4Geeks/Admin') }}</title>
+    <title>{{ config('app.name','Admin_Lap4Geeks') }}</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -128,7 +128,7 @@
                 <div>
                     <h1 class="hidden-sm hidden-xs">
                         <a href="#"><img src="css/adminLayout/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
-                        </a> Username
+                        </a> Admin 
                     </h1>
                 </div>
 
@@ -169,7 +169,7 @@
                         <!--Order List-->
 
                         <li>
-                            <a href="order_list.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                            <a href="/admin/order_list"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Order List</span></a>
                         </li>
 
@@ -183,7 +183,7 @@
 
                         <!--Admin Profile-->
                         <li>
-                            <a href="admin_profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true">
+                            <a href=""><span class="glyphicon glyphicon-user" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Admin Profile</span></a>
                         </li>
 

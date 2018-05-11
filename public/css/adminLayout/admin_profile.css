@@ -1,0 +1,48 @@
+.content-inner
+{
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: -10px;
+	background-color: #fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+
+}
+
+
+.content-inner hr
+{
+	width: 700px;	
+	border-color: #eee;
+}
+
+.content header
+{
+	text-decoration: none;
+}
+#content .content-inner input
+{
+	width: 50%;
+}
+#content .content-inner2 
+{
+	margin-right: 56px;
+}
+
+
+#content .content-inner2 input
+{
+	width: 55%;
+	margin-top: 7px;
+
+}
+#content #pswd
+{
+		margin-left: -70px;
+}
+
+#content header
+{
+	background-color: #fff;
+}
+
