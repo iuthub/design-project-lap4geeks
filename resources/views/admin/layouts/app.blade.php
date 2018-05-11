@@ -127,7 +127,7 @@
             <div class="pull-left img">
                 <div>
                     <h1 class="hidden-sm hidden-xs">
-                        <a href="#"><img src="css/adminLayout/images/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
+                        <a href="#"><img src="/css/adminLayout/images/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
                         </a> Admin 
                     </h1>
                 </div>
@@ -223,11 +223,12 @@
                                 <li id="welcome" class="hidden-xs">Welcome to administration area</li>
                                 <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-bell"></span><span class="label label-warning">3</span></a></li>
                                 <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="label label-message">3</span></a></li>   
-                                <li>
-                                     <a href="{{ route('logout') }}"
+                                <li >
+                                     <a href="{{ route('logout') }}" class="logout"
                                          onclick="event.preventDefault();
-                                                      document.getElementById('logout-form').submit();">
+                                                      document.getElementById('logout-form').submit();"> <span class="glyphicon glyphicon-log-out"></span>
                                          {{ __('Logout') }}
+
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
