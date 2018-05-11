@@ -127,7 +127,7 @@
             <div class="pull-left img">
                 <div>
                     <h1 class="hidden-sm hidden-xs">
-                        <a href="#"><img src="css/adminLayout/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
+                        <a href="#"><img src="css/adminLayout/images/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
                         </a> Admin 
                     </h1>
                 </div>

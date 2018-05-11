@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -85,5 +85,59 @@
             </div>
         </div>
     </div>
+</body>
+</html>
+
+--}}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>LOGIN PAGE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Latest compiled and minified css-->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--login page css -->
+        <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/login_page.css')}}">
+</head>
+<body>
+
+<div class="col-md-12">
+        <nav><img src="css/adminLayout/l4g_logo.png" alt="logo"></nav>
+    </div>
+<div class="content">
+    
+    <div class="col-md-12">
+    <h2>Admin Login Page</h2>
+    <form action="/action_page.php">
+        <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="************" name="pwd">
+        </div>
+    
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember">Remember me</label>
+            <button type="submit" class="btn btn-info ">Sign In</button>
+        </div>
+    
+   </form>
+</div>
+
+</div>
+
+
 </body>
 </html>
