@@ -153,7 +153,7 @@
                                 <span class="hidden-sm hidden-xs">Category</span></a>
                             <ul class="collapse collapseable" id="collapse-post">
                                 <li><a href="/admin/categories/create"><span class="glyphicon glyphicon-plus-sign"></span> Add Category</a></li>
-                                <li><a href="category_list.html"><span class="glyphicon glyphicon-list-alt"></span> Category List</a></li>
+                                <li><a href="/admin/categories"><span class="glyphicon glyphicon-list-alt"></span> Category List</a></li>
                             </ul>
                         </li>
 

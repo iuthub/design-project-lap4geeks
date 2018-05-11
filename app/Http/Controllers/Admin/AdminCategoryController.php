@@ -24,7 +24,8 @@ class AdminCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::orderBy('created_at','desc')->paginate(15);
+        return view('admin.categories.view_categories')->with('categories',$categories);
     }
 
     /**
