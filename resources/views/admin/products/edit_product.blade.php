@@ -2,7 +2,7 @@
 
 @section('content')
 
-		<div class="container">
+		<div class="well">
 			{{--<div class="row">
 				<div class="col-md-5 col-sm-4 ">
 					<img src="/storage/product_images/{{$product->products_picture}}" style="width:100%">
@@ -11,7 +11,7 @@
 					<h3> {{$product->name}} </h3>
 				</div>
 			</div>--}}
-			<h2>Adding new product</h2>
+			<h2>Editing Product with id {{ $product->id }}</h2>
 			{!! Form::open(['action'=>['Admin\AdminProductsController@update',$product->id],'method'=>'POST','enctype'=>'multipart/form-data']) !!}
    				 
 				<div class="form-group">
@@ -48,7 +48,7 @@
 					{{Form::file('product_image')}}
 				</div>
 				{{Form::hidden('_method','put')}}
-				{{Form::submit('Add',['class' => 'btn btn-primary'])}}
+				{{Form::submit('Save changes',['class' => 'btn btn-primary'])}}
 			{!! Form::close() !!}
 
 

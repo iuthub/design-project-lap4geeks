@@ -2,8 +2,8 @@
 
 @section('content')
 
-	@if(count(categories) > 0 )
-		@foreach($categories as category)
+	@if(count($categories) > 0 )
+		@foreach($categories as $category)
 		<div class="well">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 ">
