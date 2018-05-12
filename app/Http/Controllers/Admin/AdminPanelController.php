@@ -32,7 +32,7 @@ class AdminPanelController extends Controller
      */
     public function index()
     {
-        $products = Product::orderBy('created_at','desc')->take(5)->get();
+        $products = Product::orderBy('created_at','desc')->take(3)->get();
         $orders = Order::orderBy('created_at','desc')->take(5)->get();
         $uactivities = UserActivity::orderBy('created_at','desc')->take(5)->get();
 

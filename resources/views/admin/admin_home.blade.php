@@ -320,24 +320,55 @@
 @extends('admin.layouts.app')
 
 @section('content')
-        <div class="well">
-            <div class="col-md-6 col-md-offset-0">
+        <div class="row">
+
+            <div class="col-md-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Recently Added Products</div>
+                    <div class="panel-heading" align="center">Recently Added Products</div>
                     <div class="panel-body">
-                        
+                        @if(count($products) > 0)
+                            @foreach($products as $product)
+                            <div class="row well">
+                                <div class="col-md-4 col-sm-4 ">
+                                <img style="width:100%" src="/storage/product_images/{{$product->products_picture}}">
+                                 </div>
+                                 <div class="col-md-8     ">
+                                <h3>{{$product->name}}</h3>
+                                    <small>{{$product->details}}</small>
+                                 </div>
+                            </div>
+                            @endforeach
+                                <a class="btn btn-primary" href="/admin/all_products">View all products</a> 
+                            @else
+                            Currently no products found 
+                        @endif
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Admin Dashboard</div>
+                    <div class="panel-heading" align="center"></div>
                     <div class="panel-body">
-                        @component('components.who-is-logged-in')
-                        @endcomponent
+                        @if(count($uactivities) > 0)
+                            @foreach($products as $product)
+                            <div class="row well">
+                                <div class="col-md-4 col-sm-4 ">
+                                <img style="width:100%" src="/storage/product_images/{{$product->products_picture}}">
+                                 </div>
+                                 <div class="col-md-8     ">
+                                <h3>{{$product->name}}</h3>
+                                    <small>{{$product->details}}</small>
+                                 </div>
+                            </div>
+                            @endforeach
+                                <a class="btn btn-primary" href="/admin/all_products">View all products</a> 
+                            @else
+                            Currently no products found 
+                        @endif
                     </div>
                 </div>
             </div>
+
         </div>
 @endsection

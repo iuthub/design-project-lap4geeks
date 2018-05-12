@@ -116,6 +116,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/index.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/default.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/column.css')}}">
+
 </head>
 
 <body>
