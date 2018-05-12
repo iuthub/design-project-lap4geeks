@@ -9,12 +9,12 @@
 			</div>	
 		{!! Form::open(['action' => ['Admin\AdminCategoryController@update',$category->id],'method'=>'POST']) !!}
 			<div class="form-group">
-				
+				{{ Form::label('name','Name of the category') }}
 				{{Form::text('name',$category->name,['class'=>'form-control','placeholder' => 'Category name'])}}
 			</div>
    			
 			<div class="form-group">
-				
+				{{ Form::label('description','Description of the category') }}
 				{{Form::textarea('description',$category->description,['class'=>'form-control','placeholder' => 'Description of new category'])}}
 			</div>
 			{{ Form::hidden('_method','PUT') }}
