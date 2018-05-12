@@ -188,10 +188,10 @@
                             <a href=""><span class="glyphicon glyphicon-user" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Admin Profile</span></a>
                         </li>
-
+{{-- TTOOOOOOOOOOOOOO DDOOOOOOOOOOOOOOOOOO --}}
                         <!--Settings-->
-                        <li id="app-settings">
-                            <a href="settings.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true">
+                        <li >
+                            <a id="app-settings" href="settings.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Application Setting</span></a>
                         </li>
 
