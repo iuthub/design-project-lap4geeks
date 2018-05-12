@@ -46,6 +46,10 @@ class AdminCategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'name'=>'required',
+            'description'=>'required'
+        ]);
         $category = new Category;
 
         $category->name = $request->input('name');
@@ -88,7 +92,17 @@ class AdminCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         $this->validate($request,[
+            'name'=>'required',
+            'description'=>'required'
+        ]);
+        $category = Category::find($id);
+
+        $category->name = $request->input('name');
+        $category->description = $request->input('description');
+        $category->save();
+
+        return redirect('/admin');
     }
 
     /**
