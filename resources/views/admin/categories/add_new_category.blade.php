@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div id="content">
+	<div class="well">
 		<div class="container-fluid " align="center">
  					<h2 id="header">Add New Category</h2>
 			</div>	

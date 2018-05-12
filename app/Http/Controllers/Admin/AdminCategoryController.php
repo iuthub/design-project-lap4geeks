@@ -24,7 +24,7 @@ class AdminCategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::orderBy('created_at','desc')->paginate(2);
+        $categories = Category::orderBy('created_at','desc')->paginate(5);
         return view('admin.categories.view_categories')->with('categories',$categories);
     }
 
@@ -56,7 +56,7 @@ class AdminCategoryController extends Controller
         $category->description = $request->input('description');
         $category->save();
 
-        return redirect('/admin');
+        return redirect('/admin')->with('success','Category successfully created');
     }
 
     /**
@@ -96,13 +96,14 @@ class AdminCategoryController extends Controller
             'name'=>'required',
             'description'=>'required'
         ]);
+
         $category = Category::find($id);
 
         $category->name = $request->input('name');
         $category->description = $request->input('description');
         $category->save();
 
-        return redirect('/admin');
+        return redirect('/admin')->with('success','Category successfully updated');
     }
 
     /**
@@ -113,6 +114,8 @@ class AdminCategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::find($id);
+        $category->delete();
+        return redirect('/admin/all_products')->with('success','Category successfully deleted');
     }
 }

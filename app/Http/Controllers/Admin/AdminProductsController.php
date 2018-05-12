@@ -173,7 +173,7 @@ class AdminProductsController extends Controller
         $product->products_picture = $fileNameToStore;
         $product->category_id = $categoryID->id;  
         $product->save();
-        return redirect('/admin/all_products')->with('success','Product updated');
+        return redirect('/admin/all_products')->with('success','Product successfully updated');
 
 
     }
@@ -188,6 +188,6 @@ class AdminProductsController extends Controller
     {
         $product = Product::find($id);
         $product->delete();
-        return redirect('/admin/all_products');
+        return redirect('/admin/all_products')->with('success','Product successfully deleted');
     }
 }
