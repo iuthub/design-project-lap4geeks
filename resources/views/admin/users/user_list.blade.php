@@ -4,12 +4,10 @@
 	
 	@if(count($users)>0)
 		<div class="col-md-10 display-table-cell col-sm-11 valign-top box">
-			<div id="content">
-
 				<header class="clearfix">
-						<div class="col-xs-4 col-sm-3 col-md-3">
-							<b>All users</b>
-						</div>
+					<div class="col-xs-4 col-sm-3 col-md-3">
+						<b>All users</b>
+					</div>
 				</header>
 				<div class="content-inner">
 						<table class="table table-hover">
@@ -32,7 +30,7 @@
 				</table>
 			</div>
 				{{$users->links()}}
-			</div>
+			
 		</div>
 	@else
 		<div class="container">

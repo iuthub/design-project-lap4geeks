@@ -45,3 +45,4 @@ Route::prefix('admin')->group(function () {
 	/// Routes for products 
 
 Route::resource('products','ProductController');
+Route::resource('comments','CommentController');

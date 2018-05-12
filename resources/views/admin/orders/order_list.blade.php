@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-
+<div class="well">
 	@if(count($order_list) > 0 )
 
 	@else
@@ -12,5 +12,5 @@
 		</div>
 
 	@endif
-	
+</div>	
 @endsection

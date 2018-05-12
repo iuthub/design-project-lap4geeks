@@ -12,11 +12,11 @@
 						<div class="row">
 							
 							<div class="col-md-4 col-sm-4 ">
-								<a href="/admin/products/{{$product->id}}"><img style="width:50%" src="/storage/product_images/{{$product->products_picture}}"></a>
+								<img style="width:50%" src="/storage/product_images/{{$product->products_picture}}">
 							</div>
 
 							<div class="col-md-4 col-sm-4 ">
-								<h3><a href="/admin/products/{{$product->id}}">{{$product->name}}</a></h3>
+								<h3>{{$product->name}}</h3>
 									<small>{{$product->details}}</small>
 							</div>
 							<div class="col-md-1 col-sm-1 ">

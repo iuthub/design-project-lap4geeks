@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Order;
 use App\OrderList;
+use App\User;
+use App\Product;
+use App\Category;
+use App\UserActivity;
+
+
 class AdminPanelController extends Controller
 {
     
@@ -26,7 +32,11 @@ class AdminPanelController extends Controller
      */
     public function index()
     {
-        return view('admin.admin_home');
+        $products = Product::orderBy('created_at','desc')->take(5)->get();
+        $orders = Order::orderBy('created_at','desc')->take(5)->get();
+        $uactivities = UserActivity::orderBy('created_at','desc')->take(5)->get();
+
+        return view('admin.admin_home')->with('products',$products)->with('orders',$orders)->with('uactivities',$uactivities);
     }
 
     /**

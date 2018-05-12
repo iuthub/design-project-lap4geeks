@@ -3,7 +3,7 @@
 
 
 @section('content')
-<div >
+<div class="well">
 			<div class="container-fluid " align="center">
  					<h2 id="header">Add Products</h2>
 			</div>	
@@ -33,7 +33,7 @@
 						<div class="form-group">
 						
 						<select name="category_name" class="f" placeholder="Category">
-							 <option value="" disabled selected>Select your option</option>
+							 <option value="" disabled selected>Select category</option>
 							@foreach($categories as $category)
 								<option>{{$category->name}}</option>
 							@endforeach
@@ -43,7 +43,7 @@
 						<div class="form-group">
 							
 							<input type="file" name="product_image" onchange="showImage.call(this)">
-							<div class="row well">
+							<div class="container-fluid">
 								<div class="col-md-12 col-sm-12">
 									<img src="" id="image" style="display:none" height="300">
 								</div>

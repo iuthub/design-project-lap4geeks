@@ -320,8 +320,16 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    
-        <div class="row">
+        <div class="well">
+            <div class="col-md-6 col-md-offset-0">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Recently Added Products</div>
+                    <div class="panel-body">
+                        
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Admin Dashboard</div>
@@ -332,5 +340,4 @@
                 </div>
             </div>
         </div>
-
 @endsection

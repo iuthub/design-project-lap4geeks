@@ -18,15 +18,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    <style type="text/css">
+  
+   <style type="text/css">
         body {
             background-image: url('/css/adminLayout/images/laptop.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
-        }
-        a {
-            text-decoration: none;
         }
     </style>
 </head>
