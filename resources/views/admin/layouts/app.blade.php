@@ -240,7 +240,8 @@
                     </header>
                 </div>
             <div id="content">
-             @yield('content')
+                 @include('admin.informMessages.messages')
+                 @yield('content')
              </div> 
             </div>
 
