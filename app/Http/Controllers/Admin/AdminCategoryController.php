@@ -24,7 +24,7 @@ class AdminCategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::orderBy('created_at','desc')->paginate(15);
+        $categories = Category::orderBy('created_at','desc')->paginate(2);
         return view('admin.categories.view_categories')->with('categories',$categories);
     }
 
@@ -74,7 +74,9 @@ class AdminCategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+
+        return view('admin.categories.edit_category')->with('category',$category);
     }
 
     /**

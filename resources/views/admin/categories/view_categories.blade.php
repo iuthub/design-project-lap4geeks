@@ -6,7 +6,7 @@
 		@foreach($categories as $category)
 		<div class="well">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 ">
+				<div class="col-md-12 col-sm-12 ">
 					<h3><p>{{$category->name}}</p></h3>
 					<small>{{$category->description}}</small>
 				</div>
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<hr>
+	
 		@endforeach	
 		{{$categories->links()}}
 		

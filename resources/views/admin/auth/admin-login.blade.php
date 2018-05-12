@@ -18,11 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <style type="text/css">
         body {
             background-image: url('/css/adminLayout/images/laptop.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
+        }
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -30,7 +34,7 @@
     <div class="col-md-12">
         <nav><img src="/css/adminLayout/images/l4g_logo.png" alt="logo" width="20%"></nav>
     </div>
-    <div class="content">
+  
         <div class="col-md-12">
             <div class="panel-heading"><h1>Admin Login</h1></div>
                  <div class="panel-body">

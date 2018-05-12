@@ -239,8 +239,9 @@
 
                     </header>
                 </div>
-                
-             @yield('content');
+            <div id="content">
+             @yield('content')
+             </div> 
             </div>
 
         </div>
