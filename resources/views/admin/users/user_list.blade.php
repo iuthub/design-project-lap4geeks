@@ -26,9 +26,9 @@
 						<td>{{$user->email}}</td>
 						<td>{{$user->created_at}}</td>
 					@endforeach
-					</tbody>
-				</table>
-			</div>
+						</tbody>
+					</table>
+				</div>
 				{{$users->links()}}
 			
 		</div>

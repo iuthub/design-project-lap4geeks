@@ -320,55 +320,96 @@
 @extends('admin.layouts.app')
 
 @section('content')
-        <div class="row">
+        <div class="row_1">
+            <div class="container-fluid display-table">
 
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" align="center">Recently Added Products</div>
-                    <div class="panel-body">
-                        @if(count($products) > 0)
-                            @foreach($products as $product)
-                            <div class="row well">
-                                <div class="col-md-4 col-sm-4 ">
-                                <img style="width:100%" src="/storage/product_images/{{$product->products_picture}}">
-                                 </div>
-                                 <div class="col-md-8     ">
-                                <h3>{{$product->name}}</h3>
-                                    <small>{{$product->details}}</small>
-                                 </div>
-                            </div>
-                            @endforeach
-                                <a class="btn btn-primary" href="/admin/all_products">View all products</a> 
-                            @else
-                            Currently no products found 
-                        @endif
-                    </div>
+
+                <div class="col-md-6">
+                    <header class="clearfix">
+                            <div class="">
+                                <b>Recently Added Products</b>
+                            </div>    
+                    </header>
                 </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" align="center"></div>
-                    <div class="panel-body">
-                        @if(count($uactivities) > 0)
-                            @foreach($products as $product)
-                            <div class="row well">
-                                <div class="col-md-4 col-sm-4 ">
-                                <img style="width:100%" src="/storage/product_images/{{$product->products_picture}}">
-                                 </div>
-                                 <div class="col-md-8     ">
-                                <h3>{{$product->name}}</h3>
-                                    <small>{{$product->details}}</small>
-                                 </div>
-                            </div>
-                            @endforeach
-                                <a class="btn btn-primary" href="/admin/all_products">View all products</a> 
-                            @else
-                            Currently no products found 
-                        @endif
-                    </div>
+                <div class="content-inner">
+                    <table class="table">
+                        <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Created Time</th>
+                                    <th>Updated Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if(count($products) > 0)
+                                    @foreach($products as $product)
+                                        <tr>
+                                            <td>{{ $product->id }}</td>
+                                            <td>{{ $product->name }}</td>
+                                            <td>{{ $product->price }}</td>
+                                            <td>{{ $product->created_at }}</td>
+                                            <td>{{ $product->updated_at }}</td>
+                                        </tr>
+                                    @endforeach
+
+                                @else
+                                    <h1> No prodducts were found </h1>
+                                @endif
+                            </tbody>
+                    </table> 
+                     <a class="btn btn-primary" href="/admin/all_products">View all products</a>     
                 </div>
-            </div>
 
+
+
+
+                 <div class="col-md-6">
+                    <header class="clearfix">
+                            <div>
+                                <b>Users Activities</b>
+                            </div>    
+                    </header>
+                </div>
+
+                <div class="content-inner">
+                    <table class="table table-hover">
+                        <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Created Time</th>
+                                    <th>Updated Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if(count($uactivities) > 0)
+                                    @foreach($uactivities as $uactivity)
+                                        <tr>
+                                            <td>{{ $product->id }}</td>
+                                            <td>{{ $product->name }}</td>
+                                            <td>{{ $product->price }}</td>
+                                            <td>{{ $product->created_at }}</td>
+                                            <td>{{ $product->updated_at }}</td>
+                                        </tr>
+                                    @endforeach
+
+                                @else
+                                    <h1> No prodducts were found </h1>
+                                @endif
+                            </tbody>
+                    </table> 
+                     <a class="btn btn-primary" href="/admin/all_products">View all products</a>     
+                </div>
+
+
+
+            </div>
+           
+                    
+           
         </div>
 @endsection
