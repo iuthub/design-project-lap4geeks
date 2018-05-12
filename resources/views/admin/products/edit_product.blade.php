@@ -45,7 +45,27 @@
 				</div>
 
 				<div class="form-group">
-					{{Form::file('product_image')}}
+					<input type="file" value="{{$product->products_picture}}" name="product_image" onchange="showImage.call(this)">
+							<div class="container-fluid">
+								<div class="col-md-12 col-sm-12">
+									<img src="/storage/product_images/{{$product->products_picture}}" id="image" style="" height="300">
+								</div>
+
+								<script type="text/javascript">
+									function showImage() {
+										if(this.files && this.files[0]){
+											var obj = new FileReader();
+											obj.onload = function(data){
+												var image = document.getElementById('image');
+												image.src = data.target.result;
+												image.style.display = "block";
+											}
+											obj.readAsDataURL(this.files[0]);
+										}
+										
+									}
+								</script>
+							</div>
 				</div>
 				{{Form::hidden('_method','put')}}
 				{{Form::submit('Save changes',['class' => 'btn btn-primary'])}}

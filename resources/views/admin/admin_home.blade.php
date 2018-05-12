@@ -326,7 +326,7 @@
 
                 <div class="col-md-6">
                     <header class="clearfix">
-                            <div class="">
+                            <div class="class_h1">
                                 <b>Recently Added Products</b>
                             </div>    
                     </header>
@@ -368,7 +368,7 @@
 
                  <div class="col-md-6">
                     <header class="clearfix">
-                            <div>
+                            <div class="class_h1">
                                 <b>Users Activities</b>
                             </div>    
                     </header>
@@ -398,7 +398,7 @@
                                     @endforeach
 
                                 @else
-                                    <h1> No prodducts were found </h1>
+                                    <h3> No prodducts were found </h3>
                                 @endif
                             </tbody>
                     </table> 
