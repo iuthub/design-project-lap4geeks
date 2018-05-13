@@ -97,6 +97,230 @@
 
 
 
+<div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="logo-name">
+                    <span class="lap">Lap</span><span class="four">4</span><span class="geeks">Geeks</span>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg" placeholder="Recipient's username" >
+                            <div class="input-group-btn">
+                                <input type="submit" name="" class="form-control input-lg" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <button type="button" class="btn btn-success btn-lg btn-block">
+                    <i class="fa fa-shopping-cart"></i>
+                    item(s) - $ 0.00
+                </button>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Desktop</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#">
+                                <img 
+                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
+                                alt="Product 1">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="product-desc">
+                                <span class="product-title">
+                                    Product
+                                    <span class="badge">
+                                        New
+                                    </span>
+                                </span>
+                                <span class="product-caption">
+                                    Macbook Pro
+                                </span>
+                                <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                    </p>
+                                </div>
+                                <span class="product-price">
+                                    USD <b>1,200</b>
+                                </span>
+                                <div class="card-actions">
+                                    <button class="btn btn-block btn-primary cardBtn">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#">
+                                <img 
+                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
+                                alt="Product 1">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="product-desc">
+                                <span class="product-title">
+                                    Product
+                                    <span class="badge">
+                                        New
+                                    </span>
+                                </span>
+                                <span class="product-caption">
+                                    Macbook Pro
+                                </span>
+                                <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                    </p>
+                                </div>
+                                <span class="product-price">
+                                    USD <b>1,200</b>
+                                </span>
+                                <div class="card-actions">
+                                    <button class="btn btn-block btn-primary cardBtn">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#">
+                                <img 
+                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
+                                alt="Product 1">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="product-desc">
+                                <span class="product-title">
+                                    Product
+                                    <span class="badge">
+                                        New
+                                    </span>
+                                </span>
+                                <span class="product-caption">
+                                    Macbook Pro
+                                </span>
+                                <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                    </p>
+                                </div>
+                                <span class="product-price">
+                                    USD <b>1,200</b>
+                                </span>
+                                <div class="card-actions">
+                                    <button class="btn btn-block btn-primary cardBtn">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#">
+                                <img 
+                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
+                                alt="Product 1">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="product-desc">
+                                <span class="product-title">
+                                    Product
+                                    <span class="badge">
+                                        New
+                                    </span>
+                                </span>
+                                <span class="product-caption">
+                                    Macbook Pro
+                                </span>
+                                <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
+                                    </p>
+                                </div>
+                                <span class="product-price">
+                                    USD <b>1,200</b>
+                                </span>
+                                <div class="card-actions">
+                                    <button class="btn btn-block btn-primary cardBtn">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
 
 
 
