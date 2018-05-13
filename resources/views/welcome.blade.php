@@ -162,7 +162,7 @@
                                             </p>
                                         </div>
                                         <span class="product-price">
-                                            USD <b>1,200</b>
+                                            $<b>{{ $product->price }}</b>
                                         </span>
                                         <div class="card-actions">
                                             <button class="btn btn-block btn-primary cardBtn">
@@ -178,40 +178,6 @@
             </div>
         </div>  
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Footer -->
 <div class="container-fluid">
         <div class="row footer">
