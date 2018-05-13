@@ -1,3 +1,18 @@
+
+
+Team Members:
+
+Mardon Zarifjonov --- ID:U1610137
+Mirzashamol Karshiev --- ID:U1610146
+Muhammadjon Sirojiddinov --- ID:U1610153
+Kamronbek Juraev --- ID:U1610261
+Abdumutal Abdusamatov --- ID:U1610009
+
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -57,3 +72,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
