@@ -67,7 +67,8 @@ h1{
     font-size: 16px;  
 }
 
-.login-box input[type="submit"]{
+.submit{
+    width: 100px;
     border-radius:25px;
     border: none;
     outline:none;
@@ -75,9 +76,12 @@ h1{
     background: #68f0df;
     color:#138778;
     font-size: 26px;
+    align-self: center;
+    margin: 0 82px;
+    padding:0;
 }
 
-.login-box input[type="submit"]:hover{
+.submit:hover{
     cursor:pointer;
     background: #ffc107;
     color:#000;
@@ -89,4 +93,13 @@ h1{
     text-decoration: none;
     text-transform: none;
     color:#68f0df;
+}
+
+.remember{
+    font-size: 16px;
+    float: right;
+    display: inline-block;
+}
+.remember1{
+    flot:left;
 }

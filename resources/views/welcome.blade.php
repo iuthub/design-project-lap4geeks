@@ -20,7 +20,7 @@
 <body>
 
 
-{{--  <div class="flex-center position-ref full-height">
+{{-- <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
@@ -32,8 +32,8 @@
         </div>
     @endif
 </div>
-
 --}}
+
 
 
 
@@ -61,25 +61,33 @@
                                         <i class="fa fa-shopping-cart"></i>
                                         Shopping Cart
                                     </a></li>
-                                     <li>
+
+                                     <div class="">
                                         @if (Route::has('login'))
-                                             @auth
-                                                <a href="{{ url('/home') }}">Home</a>
-                                             @else
-                                             <a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>Login</a>
-                                             @endauth
+                                            <div class="top-right links">
+                                                @auth
+                                                        <i class="fa fa-shopping-cart">
+                                                        <li><a href="{{ route('logout') }}"
+                                                           onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
+                                                            {{ __('Logout') }}
+                                                        </a></li>
+                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                                @csrf
+                                                            </form>
+                                                        </i>
+                                                      
+                                                    </li>
+                                                @else
+                                                    <i class="fa fa-shopping-cart">
+                                                    <li><a href="{{ route('login') }}">Login</a>
+                                                    <a href="{{ route('register') }}">Register</a></li>
+                                                </i>
+                                                @endauth
+                                            </div>
                                         @endif
-                                      </li>
-
-                                      <li>
-                                          @if (Route::has('login'))
-                                            @auth
-
-                                            @else
-                                             <li><a href="{{ route('register') }}"><i class="fa fa-user-plus">Register</i>
-                                            @endauth
-                                          @endif
-                                      </li>
+                                    </div>
+                                     
                               </ul>
                         </div>
                   </nav>
