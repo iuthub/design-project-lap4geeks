@@ -206,7 +206,7 @@
         <div class="cont_main"> 
              <nav class="navbar navbar-default navbar-fixed-top">
                     <!--Header -->
-                    <header id="nav-header" class="clearfix">
+                    <header style="background-color: #2f4050 ; text-color: yellow" id="nav-header" class="clearfix">
                         <!--search input-->
                         <div class="col-md-5">
                             <form class="navbar-form navbar-left" action="/action_page.php">
@@ -225,12 +225,11 @@
                         <div class="col-md-7">
                             <ul class="pull-right">
                                 <li id="welcome" class="hidden-xs">Welcome to administration area</li>
-                                <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-bell"></span><span class="label label-warning">3</span></a></li>
-                                <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="label label-message">3</span></a></li>   
+                                
                                 <li >
-                                     <a href="{{ route('logout') }}" class="logout"
+                                     <a style="color:#CCEEFF" href="{{ route('logout') }}" class="logout"
                                          onclick="event.preventDefault();
-                                                      document.getElementById('logout-form').submit();"> <span class="glyphicon glyphicon-log-out"></span>
+                                                      document.getElementById('logout-form').submit();"> <span style="color:#CCEEFF" class="glyphicon glyphicon-log-out"></span>
                                          {{ __('Logout') }}
 
                                     </a>
@@ -246,7 +245,6 @@
 
 
             <div id="content">
-                 
                  @include('admin.informMessages.messages')
                  @yield('content')
              </div> 
@@ -262,7 +260,8 @@
 <script>
     $(document).ready(function() {
         $(".side_menu_item").click(function() {
-            $("a").addClass("app-settings");
+           
+
            
         })
     });
