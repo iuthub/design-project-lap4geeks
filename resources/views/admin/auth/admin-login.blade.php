@@ -33,13 +33,13 @@
     </div>
   
         <div class="col-md-12">
-            <div class="panel-heading"><h1>Admin Login</h1></div>
+            <div class="panel-heading"><h1 style="color: #66ffff">Admin Login</h1></div>
                  <div class="panel-body">
                      <form class="form-horizontal" role="form" method="POST" action="{{ route('admin.login.submit') }}">
                          {{ csrf_field() }}
 
                          <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                             <label style="color: #66ffff" for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                         <div class="col-md-6">
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-4 control-label">Password</label>
+                    <label style="color: #66ffff" for="password" class="col-md-4 control-label">Password</label>
 
                     <div class="col-md-6">
                         <input id="password" type="password" class="form-control" name="password" required>
@@ -69,8 +69,8 @@
                 <div class="form-group">
                     <div class="col-md-6 col-md-offset-4">
                         <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                            <label style="color: #66ffff">
+                                <input  type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                             </label>
                         </div>
                     </div>
