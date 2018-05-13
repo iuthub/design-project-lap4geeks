@@ -1,5 +1,5 @@
 body{
-    background: url('back.jpg');
+    background: url('/css/adminLayout/images/back.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -57,7 +57,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.login-box input[type="text"], input[type="password"]{
+.login-box input[type="email"], input[type="password"]{
     border:none;
     border-bottom:1px solid #fff;
     background: transparent;
