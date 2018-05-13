@@ -22,7 +22,7 @@
 <body>
 
 
-<div class="flex-center position-ref full-height">
+{{--  <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
@@ -33,70 +33,9 @@
             @endauth
         </div>
     @endif
-
-    
 </div>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-           <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#">
-                <i class="fa fa-phone"></i>
-                123456789
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <i class="fa fa-heart"></i>
-                Wishlist(1)
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <i class="fa fa-shopping-cart"></i>
-                Shopping cart(0)
-            </a>
-          </li>
-
-          <li>
-            @if (Route::has('login'))
-                 @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                 @else
-                 <a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>Login</a>
-                 @endauth
-            @endif
-          </li>
-
-
-            {{--  @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <li><a href="{{ url('/home') }}">Home</a></li>
-                    @else
-                        <li><a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>Login</a></li>
-                        <li><a href="{{ route('register') }}"><i class="fa fa-user-plus"></i>Register</a></li>
-                    @endauth
-                </div>
-            @endif
-            --}}
-
-        </li>
-
-        </ul>
-        </div>
-      </div>
-    </nav>
+--}}
 
 
 
@@ -124,14 +63,25 @@
                                         <i class="fa fa-shopping-cart"></i>
                                         Shopping Cart
                                     </a></li>
-                                    <li><a href="#">
-                                        <i class="fa fa-sign-in"></i>
-                                        Login
-                                    </a></li>
-                                    <li><a href="#">
-                                        <i class="fa fa-user-plus"></i>
-                                        Signup
-                                    </a></li>
+                                     <li>
+                                        @if (Route::has('login'))
+                                             @auth
+                                                <a href="{{ url('/home') }}">Home</a>
+                                             @else
+                                             <a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>Login</a>
+                                             @endauth
+                                        @endif
+                                      </li>
+
+                                      <li>
+                                          @if (Route::has('login'))
+                                            @auth
+
+                                            @else
+                                             <li><a href="{{ route('register') }}"><i class="fa fa-user-plus">Register</i>
+                                            @endauth
+                                          @endif
+                                      </li>
                               </ul>
                         </div>
                   </nav>
