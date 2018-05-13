@@ -126,16 +126,17 @@
     <div class="row display-table-row box">
         <!-- side menu-->
         <div class="col-md-2 display-table-cell col-sm-1 hidden-xs valign-top box" id="side-menu">
-            <div class="pull-left img">
-                <div>
-                    <h1 class="hidden-sm hidden-xs">
-                        <a href="#"><img src="/css/adminLayout/images/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
-                        </a> Admin 
-                    </h1>
-                </div>
+            <div id="side-menu-list">
+                 <div class="pull-left img">
+                    <div>
+                        <h1 class="hidden-sm hidden-xs">
+                            <a href="#"><img src="/css/adminLayout/images/img_avatar.png" class="img-circle" class="img-responsive" alt="panda" width="70" height="70">
+                            </a> Admin 
+                        </h1>
+                    </div>
 
                 <!--Side munu-->
-                <div id="side-menu-list">
+                
                     <ul>
                         <!--Dashboard-->
                         <li class="link active">
@@ -203,7 +204,7 @@
 
         <!--main content-->
         <div class="cont_main"> 
-             <div class="navbar fixed-nav-bar">
+             <nav class="navbar navbar-default navbar-fixed-top">
                     <!--Header -->
                     <header id="nav-header" class="clearfix">
                         <!--search input-->
@@ -221,7 +222,7 @@
                         </div>
                         
                         <!--glyphicons--> 
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <ul class="pull-right">
                                 <li id="welcome" class="hidden-xs">Welcome to administration area</li>
                                 <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-bell"></span><span class="label label-warning">3</span></a></li>
@@ -241,11 +242,11 @@
                         </div>
 
                     </header>
-                </div>
+                </nav>
 
 
             <div id="content">
-                 @include('admin.layouts.navbar')
+                 
                  @include('admin.informMessages.messages')
                  @yield('content')
              </div> 
