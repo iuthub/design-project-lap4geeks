@@ -128,186 +128,53 @@
         <div class="jumbotron">
             <h3>Featured</h3>
             <div class="row">
-                <div class="col-sm-12 col-md-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#">
-                                <img class="card-pic" 
-                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
-                                alt="Product 1">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="product-desc">
-                                <span class="product-title">
-                                    Product
-                                    <span class="badge">
-                                        New
-                                    </span>
-                                </span>
-                                <span class="product-caption">
-                                    Macbook Pro
-                                </span>
-                                <span class="product-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star grey"></i>
-                                </span>
-                                <div class="product-info">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
-                                    </p>
+                @foreach($products as $product)
+                        <div class="col-sm-12 col-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#">
+                                        <img class="card-pic" 
+                                        src="/storage/product_images/{{$product->products_picture}}"
+                                        alt="Product 1">
+                                    </a>
                                 </div>
-                                <span class="product-price">
-                                    USD <b>1,200</b>
-                                </span>
-                                <div class="card-actions">
-                                    <button class="btn btn-block btn-primary cardBtn">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        Add to Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#">
-                                <img class="card-pic" 
-                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
-                                alt="Product 1">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="product-desc">
-                                <span class="product-title">
-                                    Product
-                                    <span class="badge">
-                                        New
-                                    </span>
-                                </span>
-                                <span class="product-caption">
-                                    Macbook Pro
-                                </span>
-                                <span class="product-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star grey"></i>
-                                </span>
-                                <div class="product-info">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
-                                    </p>
-                                </div>
-                                <span class="product-price">
-                                    USD <b>1,200</b>
-                                </span>
-                                <div class="card-actions">
-                                    <button class="btn btn-block btn-primary cardBtn">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        Add to Cart
-                                    </button>
+                                <div class="card-body">
+                                    <div class="product-desc">
+                                        <span class="product-title">
+                                            Product
+                                            <span class="badge">
+                                                New
+                                            </span>
+                                        </span>
+                                        <span class="product-caption">
+                                            {{$product->name}}
+                                        </span>
+                                        <span class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star grey"></i>
+                                        </span>
+                                        <div class="product-info">
+                                            <p>
+                                                {{$product->details}}
+                                            </p>
+                                        </div>
+                                        <span class="product-price">
+                                            USD <b>1,200</b>
+                                        </span>
+                                        <div class="card-actions">
+                                            <button class="btn btn-block btn-primary cardBtn">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#">
-                                <img class="card-pic" 
-                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
-                                alt="Product 1">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="product-desc">
-                                <span class="product-title">
-                                    Product
-                                    <span class="badge">
-                                        New
-                                    </span>
-                                </span>
-                                <span class="product-caption">
-                                    Macbook Pro
-                                </span>
-                                <span class="product-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star grey"></i>
-                                </span>
-                                <div class="product-info">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
-                                    </p>
-                                </div>
-                                <span class="product-price">
-                                    USD <b>1,200</b>
-                                </span>
-                                <div class="card-actions">
-                                    <button class="btn btn-block btn-primary cardBtn">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        Add to Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <a href="#">
-                                <img class="card-pic" 
-                                src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/specs_open_15_large20090828.png"
-                                alt="Product 1">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="product-desc">
-                                <span class="product-title">
-                                    Product
-                                    <span class="badge">
-                                        New
-                                    </span>
-                                </span>
-                                <span class="product-caption">
-                                    Macbook Pro
-                                </span>
-                                <span class="product-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star grey"></i>
-                                </span>
-                                <div class="product-info">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting.
-                                    </p>
-                                </div>
-                                <span class="product-price">
-                                    USD <b>1,200</b>
-                                </span>
-                                <div class="card-actions">
-                                    <button class="btn btn-block btn-primary cardBtn">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        Add to Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>  
     </div>
