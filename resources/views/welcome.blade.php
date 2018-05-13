@@ -79,8 +79,10 @@
                                                       
                                                     </li>
                                                 @else
-                                                    <i class="fa fa-shopping-cart">
+                                                    <i class="fa fa-sign-in"></i>
+
                                                     <li><a href="{{ route('login') }}">Login</a>
+                                                    <i class="fa fa-user-plus"></i>
                                                     <a href="{{ route('register') }}">Register</a></li>
                                                 </i>
                                                 @endauth

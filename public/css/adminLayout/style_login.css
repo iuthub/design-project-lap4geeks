@@ -77,7 +77,6 @@ h1{
     color:#138778;
     font-size: 26px;
     align-self: center;
-    margin: 0 82px;
     padding:0;
 }
 
@@ -102,4 +101,8 @@ h1{
 }
 .remember1{
     flot:left;
+}
+#position {
+
+    position: inherit;
 }
