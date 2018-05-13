@@ -113,7 +113,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-
+    <script src="jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/index.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/default.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/adminLayout/column.css')}}">
@@ -139,18 +139,18 @@
                     <ul>
                         <!--Dashboard-->
                         <li class="link active">
-                            <a href="/admin"><span class="glyphicon glyphicon-th-large" aria-hidden="true">
+                            <a class="side_menu_item" id="dashboard" href="/admin"><span class="glyphicon glyphicon-th-large" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Dashboard</span></a>
                         </li>
 
                         <!--Users List-->
                         <li>
-                            <a href="/admin/user_list"><span class="glyphicon glyphicon-user" aria-hidden="true">
+                            <a class="side_menu_item" id="dashboard" href="/admin/user_list"><span class="glyphicon glyphicon-user" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Users List</span></a>
                         </li>
 
                         <!--Category dropdown-->
-                        <li class="link"><a href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
+                        <li class="link"><a id="dashboard" class="side_menu_item" href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
                                 <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                                 <span class="hidden-sm hidden-xs">Category</span></a>
                             <ul class="collapse collapseable" id="collapse-post">
@@ -160,7 +160,7 @@
                         </li>
 
                         <!--Product dropdown-->
-                        <li class="link"><a href="#collapse-products" data-toggle="collapse" aria-controls="collapse-products">
+                        <li class="link"><a id="dashboard" class="side_menu_item" href="#collapse-products" data-toggle="collapse" aria-controls="collapse-products">
                                 <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                                 <span class="hidden-sm hidden-xs">Product</span></a>
                             <ul class="collapse collapseable" id="collapse-products">
@@ -171,7 +171,7 @@
                         <!--Order List-->
 
                         <li>
-                            <a href="/admin/order_list"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                            <a id="dashboard" class="side_menu_item" href="/admin/order_list"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Order List</span></a>
                         </li>
 
@@ -179,19 +179,19 @@
 
                         <!--Mail Box-->
                         <li>
-                            <a href="mail_box.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true">
+                            <a id="dashboard" class="side_menu_item" href="mail_box.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Mail Box</span></a>
                         </li>
 
                         <!--Admin Profile-->
                         <li>
-                            <a href=""><span class="glyphicon glyphicon-user" aria-hidden="true">
+                            <a id="dashboard" class="side_menu_item" href=""><span class="glyphicon glyphicon-user" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Admin Profile</span></a>
                         </li>
 {{-- TTOOOOOOOOOOOOOO DDOOOOOOOOOOOOOOOOOO --}}
                         <!--Settings-->
                         <li >
-                            <a id="app-settings" href="settings.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true">
+                            <a id="dashboard" class="side_menu_item" id="app-settings" href="settings.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true">
                                 </span><span class="hidden-sm hidden-xs"> Application Setting</span></a>
                         </li>
 
@@ -202,7 +202,7 @@
         </div>
 
         <!--main content-->
-        <div class="col-md-10 display-table-cell col-sm-11 valign-top box"> 
+        <div class="cont_main" > 
              <div class="row">
                     <!--Header -->
                     <header id="nav-header" class="clearfix">
@@ -254,7 +254,14 @@
 
 </div>
 </div>
-
+<script>
+    $(document).ready(function() {
+        $(".side_menu_item").click(function() {
+            $("a").addClass("app-settings");
+           
+        })
+    });
+</script>
 
 <script src="js/func.js"></script>
 </body>

@@ -411,7 +411,7 @@
             </div>
         </div>
 
-        <div class="">
+        <div class="row_1">
             <div class="container-fluid display-table">
                 <div class="col-md-6">
                     <header class="clearfix">
@@ -425,6 +425,7 @@
                     <table class="table table-hover">
                         <thead>
                                 <tr>
+                                    
                                     <th>#Id</th>
                                     <th>Name</th>
                                     <th>Price</th>

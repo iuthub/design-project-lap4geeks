@@ -5,7 +5,11 @@ html,body {
 	height: 100%;
 }
 
-
+.cont_main {
+	width: 80%;
+	float: right;
+	;
+}
 
 .display-table
 {
@@ -37,6 +41,14 @@ vertical-align: top;
 
 #side-menu{
 	background-color: #2f4050;
+
+	width: 20%;
+    position: fixed;
+    z-index: 1;
+    float: left;
+    /*background: #eee;*/
+    overflow-x: hidden;
+    padding: 8px 0;
 
 }
 
@@ -198,9 +210,11 @@ color: #676a6c;
 	border-left: 4px solid #1ab394;
 	background-color: #9fb1c2;
 }
+
 #side-menu-list #app-settings 
 {
 	background-color: #1ab394;
+	
 }
 #side-menu-list #app-settings a:hover 
 {
@@ -253,7 +267,7 @@ color: #676a6c;
 	padding: 0px 0px 0px 20px;
 	margin: 0px;
 }
-.content-inner 
+#content-inner 
 {
 	padding: 20px;
 	margin-left: 20px
