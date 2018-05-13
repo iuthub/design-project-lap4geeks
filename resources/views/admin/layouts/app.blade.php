@@ -202,25 +202,26 @@
         </div>
 
         <!--main content-->
-        <div class="cont_main" > 
-             <div class="row">
+        <div class="cont_main"> 
+             <div class="navbar fixed-nav-bar">
                     <!--Header -->
                     <header id="nav-header" class="clearfix">
                         <!--search input-->
                         <div class="col-md-5">
-                        
-                        <nav class="navbar-default pull-left">
-                             <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu-list">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                        </nav>
-                            <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Search for something  "></div>
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
                         
                         <!--glyphicons--> 
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <ul class="pull-right">
                                 <li id="welcome" class="hidden-xs">Welcome to administration area</li>
                                 <li class="fixed-width"><a href="#"><span class="glyphicon glyphicon-bell"></span><span class="label label-warning">3</span></a></li>
@@ -241,7 +242,10 @@
 
                     </header>
                 </div>
+
+
             <div id="content">
+                 @include('admin.layouts.navbar')
                  @include('admin.informMessages.messages')
                  @yield('content')
              </div> 
