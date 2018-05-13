@@ -92,8 +92,6 @@
                      <a class="btn btn-primary" href="/admin/all_products">View all products</a>     
                 </div>
             </div>
-        </div>
-
-        
+        </div>   
   </div>
 @endsection
