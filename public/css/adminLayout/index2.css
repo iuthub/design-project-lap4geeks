@@ -1,7 +1,7 @@
 .header{
      width: 100%;
       height: 100vh;
-      background: url('../assets/Landing-page.png') no-repeat 50% 50%;
+      background: url('/css/adminLayout/images/backround_img.jpg') no-repeat 50% 50%;
       background-size: cover;
     }
     .logo-name .lap{
