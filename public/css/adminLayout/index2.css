@@ -1,0 +1,207 @@
+.header{
+     width: 100%;
+      height: 100vh;
+      background: url('../assets/Landing-page.png') no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .logo-name .lap{
+      font-size: 40px;
+      font-weight: 100;
+      color: #148779;
+    }
+    .logo-name .four{
+      font-size: 40px;
+      font-weight: bold;
+      color: #148779;
+    }
+    .logo-name .geeks{
+      font-size: 40px;
+      font-weight: 700;
+      color: #148779;
+    }
+    .card{
+        border:1px solid rgb(214, 222, 228);
+        border-radius: 5px;
+        background-color:white;
+        padding: 10px;
+    }
+    .card-pic{
+        width: 200px;
+        clear: both;
+        
+    }
+    .product-title{
+        padding: 20px 20px 5px 20px;
+        font-size:17px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .badge{
+        position: relative;
+        font-size: 10px;
+        font-weight: 300;
+        color:#fff;
+        background: #11e95b;
+        padding: 2px 5 px;
+        border-radius: 4px;
+        margin-left: 5px;
+    }
+
+    .product-caption{
+        display: block;
+        padding: 0 20px;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .product-rating{
+        padding: 0 20px;
+        font-size: 12px;
+
+    }
+    .product-rating i.grey{
+        color:#acacab;
+    }
+
+    .product-info p{
+        font-size:14px;
+        text-align: left;
+        padding: 0 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-height: 55px;
+    }
+    .product-price{
+        position: absolute;
+        background: #11e95b;
+        padding: 5px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-left: -25px;
+    }
+
+    .card-actions{
+        text-align: center;
+        clear: both;
+    }
+    .cardBtn{
+
+        margin-top: 50px;
+        color: white;
+    }
+     .footer{
+         background-color: #303030;
+    }
+    .information{
+        padding: 50px 0;
+    }
+    .information ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .information ul li a{
+        color: beige;
+        text-anchor: none;
+        display: block;
+    }
+.main-navbar{
+    position: fixed;
+    width: 100%;
+    line-height: 20px;
+    z-index: 1;
+  }
+
+.logo{
+      position: fixed;
+      float: left;
+      color: #fff;
+      letter-spacing: 2px;
+}
+
+.logo img{
+  width: 120px;
+  margin-top: -14px;
+}
+
+.main-navbar ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+.main-navbar.black ul {
+      background: #138778;
+}
+
+.main-navbar ul li {
+      display: inline-block;
+      padding-right: 30px;
+}
+
+.main-navbar ul li a {
+      text-decoration: none;
+      color: #B3B3B4;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
