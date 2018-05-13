@@ -14,8 +14,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    
     <link href="{{ asset('css/adminLayout/index2.css') }}" rel="stylesheet">
 
 </head>
@@ -50,7 +48,7 @@
                         </div>
 
                         <div class="logo">
-                              <img src="/css/adminLayout/images/logo_img.jpg">
+                              <img src="/css/adminLayout/images/logo_img.ico">
                         </div>
 
                         <div class="menu">
@@ -374,6 +372,38 @@
             </div>
         </div>
     </div>
+
+
+<script type="text/javascript">
+        
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+            $('.logo').hide();
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+                  $('.logo').show();
+
+            }
+
+            else {
+                  $('nav').removeClass('black');
+                  $('.logo').hide();
+
+            }
+      })
+
+    </script>
+
+
 
 
 </body>
