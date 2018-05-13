@@ -13,6 +13,37 @@ Abdumutal Abdusamatov --- ID:U1610009
 
 
 
+Lap4Geeks
+(Laptops for geeks)
+	Our company is mainly deal with laptop delivery. Our services offer, basically, two main type of laptops: Gaming “Beast”s and Ultrabooks. Ultrabooks also divided into parts: 2-in-1 and actual ultrabooks. They both deliver really good performance for the money. In our website you can find any laptop that fits your preferences, even though, site is designed for “geek”s. 
+
+Project background
+	We developed this website using Laravel 5.6, Bootstrap 3.3.7, Adobe Photoshop 2015 CC. 
+	Main back-end is written on Laravel by Mardon Zarifjonov (U1610137) and, partially, Kamronbek Juraev (U1610261). Front-end is covered by Shahzod Isamadinov (U1610220) and Muhammadjon Sirojiddinov (U1610153).
+Muhammandjon did main landing page and Product page with Bootstrap.  	Mirzashamol Karshiev (U1610146) did  Front-end of Admin dashboard. Kamronbek Juraev also did all Graphical work, special effects on Photoshop and CSS and wrote report for current project. Overall all students contributed to Laravel part and still Mardon Zarifjonov did most of Laravel part. 
+	Abdumutal Abdusamatov (1610009) used external web services, like, Ajax and jQuery to interact with back-end data in Front-end and did hosting part. Kamronbek also did styling of use login page on pure CSS+Photoshop.
+
+
+References
+	Bootstrap:
+	http://getbootstrap.com/docs/3.3/
+	
+	Laravel:
+	https://laravel.com/
+	
+	Laravel forum:
+	https://laravelcollective.com/
+		
+	Gihub:
+	https://github.com/iuthub/design-project-lap4geeks
+
+
+
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
