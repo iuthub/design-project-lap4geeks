@@ -7,7 +7,7 @@ Mirzashamol Karshiev --- ID:U1610146
 Muhammadjon Sirojiddinov --- ID:U1610153
 Kamronbek Juraev --- ID:U1610261
 Abdumutal Abdusamatov --- ID:U1610009
-Shahzodbek Isamiddinov --- ID:1610220
+Shaxzodbek Isamiddinov --- ID:1610220
 
 
 
